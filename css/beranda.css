@@ -14,8 +14,8 @@ body {
   width: 202px;
   background-color: #b2b377;
   color: #fff;
-  padding: 20px;
   display: flex;
+  padding-top: 1rem;
   flex-direction: column;
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 .sidebar .logo img {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
 }
 
