@@ -20,6 +20,9 @@
         <div class="logo">
           <img src="images/logo.png" alt="Logo" />
         </div>
+        <button class="sidebar-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
 
         <div class="menu-container">
           <ul class="menu">
@@ -111,5 +114,11 @@
         </section>
       </main>
     </div>
+
+    <script>
+      document.querySelector('.sidebar-toggle').addEventListener('click', function() {
+        document.querySelector('.sidebar').classList.toggle('active');
+      });
+    </script>
   </body>
 </html>

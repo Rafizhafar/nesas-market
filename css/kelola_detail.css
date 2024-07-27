@@ -155,7 +155,33 @@ body {
   border-radius: 4px;
   flex: 1; /* Ensure input fields fill the available space */
   background-color: #f6eec9;
-  margin-left: -90px;
+}
+
+.product-detail .file-input {
+  display: none;
+}
+
+.product-detail .file-label {
+  padding: 10px 20px;
+  background-color: #c8cfa0;
+  color: #656565;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.product-detail .file-label i {
+  margin-right: 10px;
+  color: #656565;
+}
+
+.product-detail .file-label-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: -35px;
 }
 
 .product-detail button {

@@ -20,6 +20,9 @@
         <div class="logo">
           <img src="images/logo.png" alt="Logo" />
         </div>
+        <button class="sidebar-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
 
         <div class="menu-container">
           <ul class="menu">
@@ -52,10 +55,9 @@
       </aside>
       <main class="content">
         <section class="hero">
-          <div class="hero-header">
-            <h1>Kelola Produk</h1>
-            <a href="detail_kelola_produk.html" class="add-product-button">Tambahkan Produk</a>
-          </div>
+          <h1>Kelola Produk</h1>
+          <a href="detail_kelola_produk.html" class="add-product-button">Tambahkan Produk</a>
+    
           <div class="product-grid">
             <div class="product-card">
               <img src="images/produk/image 3.png" alt="Product 1" />
@@ -110,8 +112,16 @@
             </div>
             <!-- Tambahkan lebih banyak kartu produk sesuai kebutuhan -->
           </div>
+          
         </section>
+        
       </main>
     </div>
+
+    <script>
+      document.querySelector('.sidebar-toggle').addEventListener('click', function() {
+        document.querySelector('.sidebar').classList.toggle('active');
+      });
+    </script>
   </body>
 </html>

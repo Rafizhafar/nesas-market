@@ -25,10 +25,10 @@ main {
 
 .login-container {
   background-color: #fbf8f8;
-  padding: 40px;
-  border-radius: 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 350px;
+  padding: 2.5rem;
+  border-radius: 3.125rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  width: 21.875rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,9 +36,9 @@ main {
 
 .login-container h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   color: #858585;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .login-container form {
@@ -49,15 +49,15 @@ main {
 
 .form-group {
   position: relative;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #ccc; /* Add border for visual alignment */
+  margin-bottom: 1.25rem;
+  border-bottom: 0.125rem solid #ccc;
 }
 
 .form-group label {
   position: absolute;
-  left: 5px;
+  left: 0.3125rem;
   top: 0;
-  font-size: 16px;
+  font-size: 1rem;
   color: #656565;
   pointer-events: none;
   transition: 0.3s ease;
@@ -65,12 +65,12 @@ main {
 
 .form-group input {
   border: none;
-  border-bottom: 1px solid #000; /* Match border with label */
+  border-bottom: 0.0625rem solid #000;
   background: transparent;
   width: 100%;
-  font-size: 16px;
+  font-size: 1rem;
   color: #333;
-  padding: 20px 0 5px 0; /* Add padding to avoid overlap with icon */
+  padding: 1.25rem 0 0.3125rem 0;
   outline: none;
 }
 
@@ -80,8 +80,8 @@ main {
 
 .form-group input:focus + label,
 .form-group input:not(:placeholder-shown) + label {
-  top: -20px;
-  font-size: 12px;
+  top: -1.25rem;
+  font-size: 0.75rem;
   color: #799351;
 }
 
@@ -92,14 +92,14 @@ main {
 }
 
 .password-group input {
-  width: calc(100% - 30px); /* Leave space for the icon */
-  padding-right: 30px; /* Add padding to avoid overlap with icon */
+  width: calc(100% - 1.875rem);
+  padding-right: 1.875rem;
 }
 
 .password-group i {
   position: absolute;
-  right: 10px; /* Adjust this value to align the icon */
-  font-size: 20px;
+  right: 0.625rem;
+  font-size: 1.25rem;
   color: #799351;
   cursor: pointer;
 }
@@ -107,18 +107,17 @@ main {
 .login-container .remember-me {
   display: flex;
   align-items: center;
-  margin-bottom: 60px;
-  margin-top: 20px;
+  margin-bottom: 3.75rem;
+  margin-top: 1.25rem;
 }
 
 .login-container .remember-me input {
-  margin-right: 10px;
-
+  margin-right: 0.625rem;
 }
 
 .login-container .remember-me label {
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #656565;
 }
 
@@ -132,18 +131,18 @@ main {
 .login-actions button {
   background-color: #799351;
   color: #fff;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   border: none;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   cursor: pointer;
   width: 100%;
-  max-width: 250px;
-  height: 51px;
-  font-size: 20px;
+  max-width: 15.625rem;
+  height: 3.1875rem;
+  font-size: 1.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .login-actions button:hover {
@@ -155,9 +154,77 @@ main {
   color: #5F5F5F;
   font-size: 0.85em;
   align-self: flex-end;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 .login-container .forgot-password:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 48rem) {
+  .login-container {
+    padding: 1.875rem;
+    border-radius: 2.5rem;
+    width: 18.75rem;
+  }
+
+  .login-container h2 {
+    font-size: 2rem;
+  }
+
+  .form-group label {
+    font-size: 0.875rem;
+  }
+
+  .form-group input {
+    font-size: 0.875rem;
+  }
+
+  .password-group i {
+    font-size: 1rem;
+  }
+
+  .login-actions button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    height: 2.75rem;
+  }
+
+  .login-container .forgot-password {
+    font-size: 0.75em;
+  }
+}
+
+@media (max-width: 30rem) {
+  .login-container {
+    padding: 1.25rem;
+    border-radius: 1.875rem;
+    width: 16.875rem;
+  }
+
+  .login-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .form-group label {
+    font-size: 0.75rem;
+  }
+
+  .form-group input {
+    font-size: 0.75rem;
+  }
+
+  .password-group i {
+    font-size: 0.875rem;
+  }
+
+  .login-actions button {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    height: 2.5rem;
+  }
+
+  .login-container .forgot-password {
+    font-size: 0.65em;
+  }
 }
