@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.querySelector('.opening').classList.add('fade-out');
+            }, 5000); // Start fade out after 2.5 seconds
+            setTimeout(function() {
+                window.location.href = "login.html";
+            }, 3000); // Redirect to login after 3 seconds
+        });
+    </script>
+</head>
+<body>
+    <div class="opening">
+        <img src="images/logo.png" alt="E-commerce Logo" class="logo">
+    </div>
+</body>
+</html>

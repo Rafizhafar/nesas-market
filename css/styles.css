@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.featured-products,
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item,
+.cart-item,
+.product-management,
+.product-detail,
+.settings-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.product-item img,
+.cart-item img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #799351;
+    transition: opacity 0.5s ease;
+}
+
+.opening .logo {
+    width: 200px; /* Adjust the size of the logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.opening .btn,
+.btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.opening .btn:hover,
+.btn:hover {
+    background-color: #555;
+}
+
+.login-container,
+.product-detail,
+.settings-container {
+    max-width: 300px;
+    margin: auto;
+}
+
+.login-container form,
+.product-detail form,
+.settings-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label,
+.product-detail label,
+.settings-container label {
+    margin-bottom: 5px;
+}
+
+.login-container input,
+.product-detail input,
+.settings-container input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.fade-out {
+    opacity: 0;
+}

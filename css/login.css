@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #799351;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-container {
+  background-color: #fbf8f8;
+  padding: 40px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #858585;
+  font-size: 40px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc; /* Add border for visual alignment */
+}
+
+.form-group label {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  font-size: 16px;
+  color: #656565;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.form-group input {
+  border: none;
+  border-bottom: 1px solid #000; /* Match border with label */
+  background: transparent;
+  width: 100%;
+  font-size: 16px;
+  color: #333;
+  padding: 20px 0 5px 0; /* Add padding to avoid overlap with icon */
+  outline: none;
+}
+
+.form-group input:focus {
+  border-bottom-color: #333;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+  top: -20px;
+  font-size: 12px;
+  color: #799351;
+}
+
+.password-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-group input {
+  width: calc(100% - 30px); /* Leave space for the icon */
+  padding-right: 30px; /* Add padding to avoid overlap with icon */
+}
+
+.password-group i {
+  position: absolute;
+  right: 10px; /* Adjust this value to align the icon */
+  font-size: 20px;
+  color: #799351;
+  cursor: pointer;
+}
+
+.login-container .remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.login-container .remember-me input {
+  margin-right: 10px;
+
+}
+
+.login-container .remember-me label {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #656565;
+}
+
+.login-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.login-actions button {
+  background-color: #799351;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 250px;
+  height: 51px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login-actions button:hover {
+  background-color: #555;
+}
+
+.login-container .forgot-password {
+  text-decoration: none;
+  color: #5F5F5F;
+  font-size: 0.85em;
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+.login-container .forgot-password:hover {
+  text-decoration: underline;
+}

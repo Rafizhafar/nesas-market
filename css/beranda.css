@@ -1,0 +1,175 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 202px;
+  background-color: #b2b377;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .logo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* Center the logo horizontally */
+}
+
+.sidebar .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center menu items vertically */
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu li a img {
+  margin-bottom: 10px; /* Space between icon and text */
+  width: 40px;
+}
+
+.menu li a span {
+  font-size: 14px; /* Smaller font size for text */
+}
+
+.menu li a:hover {
+  color: #ccc;
+}
+
+.settings-container {
+  margin-top: auto; /* Push settings to the bottom */
+  width: 100%;
+}
+
+.settings-background {
+  background-color: #c8cfa0;
+  padding: 10px 0;
+  width: 100%; /* Ensures the background covers the full width of the sidebar */
+  box-sizing: border-box;
+}
+
+.settings-background a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center items horizontally */
+  padding: 10px;
+}
+
+.settings-background a img {
+  width: 40px;
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.settings-background a span {
+  font-size: 14px; /* Smaller font size for text */
+  color: #656565;
+}
+
+.settings-background a:hover {
+  color: #333;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f6eec9;
+  overflow: auto; /* Allows scrolling if content overflows */
+}
+
+.hero {
+  width: 100%; /* Make sure hero section fills the width of content */
+  padding: 20px 0; /* Add padding top and bottom */
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #799351;
+}
+
+.hero .subtext {
+  font-size: 18px;
+  color: #799351;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-card {
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  text-align: left;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px; /* Space between product name and details */
+  color: #799351;
+}
+
+.product-card .details {
+  display: flex;
+  justify-content: space-between; /* Space out the price and stock */
+  width: 100%;
+}
+
+.product-card .price {
+  font-size: 16px;
+  color: #799351;
+}
+
+.product-card .stock {
+  font-size: 14px;
+  color: #799351;
+}

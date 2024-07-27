@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Kelola Produk - E-commerce</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>E-commerce</h1>
+        <nav>
+            <a href="beranda.html">Beranda</a>
+            <a href="kelola_produk.html">Kelola Produk</a>
+            <a href="settings.html">Settings</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Detail Kelola Produk</h2>
+        <div class="product-detail">
+            <form action="kelola_produk.html">
+                <label for="product-name">Nama Produk:</label>
+                <input type="text" id="product-name" name="product-name" required>
+                <label for="product-price">Harga Produk:</label>
+                <input type="text" id="product-price" name="product-price" required>
+                <label for="product-image">Gambar Produk:</label>
+                <input type="file" id="product-image" name="product-image">
+                <button type="submit">Simpan</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 E-commerce. All rights reserved.</p>
+    </footer>
+</body>
+</html>
