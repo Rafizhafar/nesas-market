@@ -1,0 +1,178 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 202px;
+  background-color: #b2b377;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .logo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu li a img {
+  margin-bottom: 10px;
+  width: 40px;
+}
+
+.menu li a span {
+  font-size: 14px;
+}
+
+.menu li a:hover {
+  color: #ccc;
+}
+
+.settings-container {
+  margin-top: auto;
+  width: 100%;
+}
+
+.settings-background {
+  background-color: #c8cfa0;
+  padding: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.settings-background a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.settings-background a img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.settings-background a span {
+  font-size: 14px;
+  color: #656565;
+}
+
+.settings-background a:hover {
+  color: #333;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f6eec9;
+  overflow: auto;
+}
+
+.product-detail-section {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.product-detail-section h2 {
+  font-size: 36px;
+  color: #799351;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.product-detail {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.product-detail form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add space between form groups */
+}
+
+.product-detail .form-group {
+  display: flex;
+  align-items: center;
+}
+
+.product-detail label {
+  font-size: 18px;
+  color: #799351;
+  flex-basis: 30%;
+  font-weight: bold;
+  margin-left: 35px;
+}
+
+.product-detail input,
+.product-detail textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #c8cfa0;
+  border-radius: 4px;
+  flex: 1; /* Ensure input fields fill the available space */
+  background-color: #f6eec9;
+  margin-left: -90px;
+}
+
+.product-detail button {
+  align-self: flex-end; /* Align button to the end of the form */
+  padding: 10px 20px;
+  background-color: #799351;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 239px;
+  height: 70px;
+  margin-top: 50px;
+}
+
+.product-detail button:hover {
+  background-color: #666;
+}
