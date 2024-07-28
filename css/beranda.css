@@ -30,18 +30,6 @@ body {
   height: auto;
 }
 
-.sidebar .sidebar-toggle {
-  display: none;
-  background-color: #c8cfa0;
-  border: none;
-  color: #fff;
-  padding: 0.625rem;
-  cursor: pointer;
-  font-size: 1.25rem;
-  margin: 0.625rem;
-  border-radius: 0.3125rem; /
-}
-
 .menu-container {
   flex: 1;
   display: flex;
@@ -198,23 +186,9 @@ body {
   }
 
   .menu-container {
-    display: none;
-  }
-
-  .sidebar .sidebar-toggle {
-    display: block; 
-  }
-
-  .sidebar.active {
-    width: 12.5rem;
-  }
-
-  .sidebar.active .menu-container {
     display: flex;
-  }
-
-  .menu-container {
     flex-direction: column;
+    align-items: center;
     width: 100%;
   }
 
@@ -223,11 +197,18 @@ body {
   }
 
   .menu li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 0.875rem;
   }
 
   .menu li a img {
-    width: 1.875rem;
+    width: 2.5rem;
+  }
+
+  .menu li a span {
+    display: none;
   }
 
   .settings-background a span {
