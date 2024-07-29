@@ -226,9 +226,14 @@ body {
 
 @media (max-width: 48rem) {
   .sidebar {
-    width: 4.6875rem;
+     width: 3.75rem;
+    overflow: hidden;
   }
 
+  .sidebar .logo img {
+    max-width: 100%;
+  }
+  
   .sidebar .sidebar-toggle {
     display: block;
   }
@@ -242,6 +247,7 @@ body {
   .sidebar .settings-background a img {
     margin-bottom: 0;
     margin-right: 0;
+    max-width: 100%;
   }
 }
 

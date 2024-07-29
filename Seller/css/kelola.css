@@ -249,8 +249,14 @@ body {
 }
 
 @media (max-width: 48rem) {
+
   .sidebar {
-    width: 4.6875rem; 
+    width: 3.75rem;
+    overflow: hidden;
+  }
+
+  .sidebar .logo img {
+    max-width: 100%;
   }
 
   .sidebar .sidebar-toggle {
@@ -277,6 +283,6 @@ body {
 
   .add-product-button {
     margin-top: 0.625rem;
-    width: 100%; 
+    width: 80%; 
   }
 }
