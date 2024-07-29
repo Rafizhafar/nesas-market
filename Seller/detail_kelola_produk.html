@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Kelola Produk - E-commerce</title>
+    <link rel="stylesheet" href="css/kelola_detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="menu-container">
+                <ul class="menu">
+                    <li><a href="beranda.html"><img src="images/home.png" alt="Home Icon"><span>Beranda</span></a></li>
+                    <li><a href="kelola_produk.html"><img src="images/kelola.png" alt="Kelola Produk Icon"><span>Kelola Produk</span></a></li>
+                </ul>
+            </div>
+            <div class="settings-container">
+                <div class="settings-background">
+                    <a href="settings.html"><img src="images/pengaturan.png" alt="Settings Icon"><span>Pengaturan</span></a>
+                </div>
+            </div>
+        </aside>
+        <main class="content">
+            <section class="product-detail-section">
+                <h2>Tambahkan Produk</h2>
+                <div class="product-detail">
+                    <form action="kelola_produk.html">
+                        <div class="form-group">
+                            <label for="product-name">Nama Produk:</label>
+                            <input type="text" id="product-name" name="product-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-price">Harga Produk:</label>
+                            <input type="text" id="product-price" name="product-price" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-stock">Stok Produk:</label>
+                            <input type="text" id="product-stock" name="product-stock" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-image">Gambar:</label>
+                            <div class="file-label-container">
+                                <input type="file" id="product-image" name="product-image" class="file-input">
+                                <label for="product-image" class="file-label">
+                                    <i class="fas fa-upload"></i>Pilih Gambar
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-category">Kategori:</label>
+                            <input type="text" id="product-category" name="product-category" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-description">Deskripsi:</label>
+                            <textarea id="product-description" name="product-description" rows="4" required></textarea>
+                        </div>
+                        <button type="submit">Simpan</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
